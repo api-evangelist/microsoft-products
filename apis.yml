@@ -1,15 +1,16 @@
+aid: microsoft-products
 name: Microsoft Products APIs
 description: A collection of APIs for various Microsoft products and services
 image: https://www.microsoft.com/favicon.ico
 created: '2024-01-01'
-modified: '2024-01-01'
-specificationVersion: '0.18'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 tags:
 - microsoft
 - cloud
 - productivity
 - enterprise
-url: https://www.microsoft.com/apis
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml
 apis:
 - name: Microsoft Graph API
   description: Unified API endpoint for accessing Microsoft 365, Windows, and Enterprise Mobility + Security services
@@ -159,9 +160,8 @@ apis:
   - type: Unity Plugin
     url: https://github.com/microsoft/xbox-live-unity-plugin
 maintainers:
-- name: Microsoft
-  email: support@microsoft.com
-  url: https://www.microsoft.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 common:
 - type: Portal
   url: https://developer.microsoft.com/
