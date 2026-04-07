@@ -7,12 +7,11 @@ created: '2024-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.19'
 tags:
-  - microsoft
-  - cloud
-  - productivity
-  - enterprise
-url: 
-  https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml
+  - Cloud
+  - Enterprise
+  - Microsoft
+  - Productivity
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml
 apis:
   - name: Microsoft Graph API
     description: >-
@@ -22,16 +21,15 @@ apis:
     humanUrl: https://developer.microsoft.com/en-us/graph
     baseUrl: https://graph.microsoft.com
     tags:
-      - graph
-      - microsoft-365
-      - azure-ad
-      - unified-api
+      - Azure-Ad
+      - Graph
+      - Microsoft-365
+      - Unified-Api
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/graph/overview
       - type: OpenAPI
-        url: 
-          https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml
+        url: https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml
       - type: Authentication
         url: https://docs.microsoft.com/en-us/graph/auth/
       - type: SDKs
@@ -45,11 +43,11 @@ apis:
     humanUrl: https://azure.microsoft.com/en-us/develop/
     baseUrl: https://management.azure.com
     tags:
-      - azure
-      - cloud
-      - infrastructure
-      - iaas
-      - paas
+      - Azure
+      - Cloud
+      - Iaas
+      - Infrastructure
+      - Paas
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/rest/api/azure/
@@ -68,11 +66,11 @@ apis:
     humanUrl: https://developer.microsoft.com/en-us/microsoft-365
     baseUrl: https://api.office.com
     tags:
-      - office-365
-      - productivity
-      - collaboration
-      - exchange
-      - sharepoint
+      - Collaboration
+      - Exchange
+      - Office-365
+      - Productivity
+      - Sharepoint
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/office/
@@ -87,18 +85,17 @@ apis:
     humanUrl: https://developer.microsoft.com/en-us/microsoft-teams
     baseUrl: https://graph.microsoft.com/v1.0/teams
     tags:
-      - teams
-      - collaboration
-      - chat
-      - meetings
+      - Chat
+      - Collaboration
+      - Meetings
+      - Teams
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/microsoftteams/platform/
       - type: Bot Framework
         url: https://dev.botframework.com/
       - type: App Studio
-        url: 
-          https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview
+        url: https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview
   - name: Azure Cognitive Services API
     description: >-
       AI and machine learning APIs for vision, speech, language, and decision making.
@@ -106,20 +103,18 @@ apis:
     humanUrl: https://azure.microsoft.com/en-us/services/cognitive-services/
     baseUrl: https://api.cognitive.microsoft.com
     tags:
-      - ai
-      - machine-learning
-      - cognitive-services
-      - computer-vision
-      - nlp
+      - Ai
+      - Cognitive-Services
+      - Computer-Vision
+      - Machine-Learning
+      - Nlp
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/azure/cognitive-services/
       - type: Pricing
-        url: 
-          https://azure.microsoft.com/en-us/pricing/details/cognitive-services/
+        url: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/
       - type: SDKs
-        url: 
-          https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account
+        url: https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account
   - name: Power Platform API
     description: >-
       APIs for Power Apps, Power Automate, and Power BI.
@@ -127,10 +122,10 @@ apis:
     humanUrl: https://powerplatform.microsoft.com/
     baseUrl: https://api.powerplatform.com
     tags:
-      - power-platform
-      - low-code
-      - automation
-      - business-intelligence
+      - Automation
+      - Business-Intelligence
+      - Low-Code
+      - Power-Platform
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/power-platform/
@@ -145,19 +140,17 @@ apis:
     humanUrl: https://dynamics.microsoft.com/
     baseUrl: https://api.businesscentral.dynamics.com
     tags:
-      - dynamics
-      - crm
-      - erp
-      - business-applications
+      - Business-Applications
+      - Crm
+      - Dynamics
+      - Erp
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/dynamics365/
       - type: Web API
-        url: 
-          https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/
+        url: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/
       - type: Developer Guide
-        url: 
-          https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/
+        url: https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/
   - name: Xbox Live API
     description: >-
       APIs for Xbox Live gaming services.
@@ -165,10 +158,10 @@ apis:
     humanUrl: https://developer.microsoft.com/en-us/games/xbox
     baseUrl: https://xboxlive.com
     tags:
-      - gaming
-      - xbox
-      - multiplayer
-      - achievements
+      - Achievements
+      - Gaming
+      - Multiplayer
+      - Xbox
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/gaming/xbox-live/
