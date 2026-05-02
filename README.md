@@ -1,28 +1,29 @@
-# Microsoft Products APIs (microsoft-products)
-A collection of APIs for various Microsoft products and services
+# Microsoft Products (microsoft-products)
+A collection of APIs for various Microsoft products and services.
 
-**URL:** [Visit APIs.json URL](https://www.microsoft.com/apis)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml)
 
 ## Tags:
 
- - microsoft, cloud, productivity, enterprise
+ - Cloud, Enterprise, Microsoft, Productivity
 
 ## Timestamps
 
-- **Created:** 2024-01-01 
-- **Modified:** 2024-01-01 
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### Microsoft Graph API
-Unified API endpoint for accessing Microsoft 365, Windows, and Enterprise Mobility + Security services
+Unified API endpoint for accessing Microsoft 365, Windows, and Enterprise Mobility + Security services.
 
 **Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
 
+**Base URL:** https://graph.microsoft.com
 
 #### Tags:
 
- - graph, microsoft-365, azure-ad, unified-api
+ - Azure-Ad, Graph, Microsoft-365, Unified-Api
 
 #### Properties
 
@@ -33,14 +34,15 @@ Unified API endpoint for accessing Microsoft 365, Windows, and Enterprise Mobili
 - [Pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)
 
 ### Azure REST API
-APIs for managing Azure resources and services
+APIs for managing Azure resources and services.
 
 **Human URL:** [https://azure.microsoft.com/en-us/develop/](https://azure.microsoft.com/en-us/develop/)
 
+**Base URL:** https://management.azure.com
 
 #### Tags:
 
- - azure, cloud, infrastructure, iaas, paas
+ - Azure, Cloud, Iaas, Infrastructure, Paas
 
 #### Properties
 
@@ -51,14 +53,15 @@ APIs for managing Azure resources and services
 - [Pricing](https://azure.microsoft.com/en-us/pricing/)
 
 ### Microsoft 365 API
-APIs for Microsoft 365 services including Exchange, SharePoint, and Teams
+APIs for Microsoft 365 services including Exchange, SharePoint, and Teams.
 
 **Human URL:** [https://developer.microsoft.com/en-us/microsoft-365](https://developer.microsoft.com/en-us/microsoft-365)
 
+**Base URL:** https://api.office.com
 
 #### Tags:
 
- - office-365, productivity, collaboration, exchange, sharepoint
+ - Collaboration, Exchange, Office-365, Productivity, Sharepoint
 
 #### Properties
 
@@ -67,14 +70,15 @@ APIs for Microsoft 365 services including Exchange, SharePoint, and Teams
 - [SDKs](https://docs.microsoft.com/en-us/office/dev/add-ins/)
 
 ### Microsoft Teams API
-API for building apps and bots for Microsoft Teams
+API for building apps and bots for Microsoft Teams.
 
 **Human URL:** [https://developer.microsoft.com/en-us/microsoft-teams](https://developer.microsoft.com/en-us/microsoft-teams)
 
+**Base URL:** https://graph.microsoft.com/v1.0/teams
 
 #### Tags:
 
- - teams, collaboration, chat, meetings
+ - Chat, Collaboration, Meetings, Teams
 
 #### Properties
 
@@ -83,14 +87,15 @@ API for building apps and bots for Microsoft Teams
 - [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview)
 
 ### Azure Cognitive Services API
-AI and machine learning APIs for vision, speech, language, and decision making
+AI and machine learning APIs for vision, speech, language, and decision making.
 
 **Human URL:** [https://azure.microsoft.com/en-us/services/cognitive-services/](https://azure.microsoft.com/en-us/services/cognitive-services/)
 
+**Base URL:** https://api.cognitive.microsoft.com
 
 #### Tags:
 
- - ai, machine-learning, cognitive-services, computer-vision, nlp
+ - Ai, Cognitive-Services, Computer-Vision, Machine-Learning, Nlp
 
 #### Properties
 
@@ -99,14 +104,15 @@ AI and machine learning APIs for vision, speech, language, and decision making
 - [SDKs](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account)
 
 ### Power Platform API
-APIs for Power Apps, Power Automate, and Power BI
+APIs for Power Apps, Power Automate, and Power BI.
 
 **Human URL:** [https://powerplatform.microsoft.com/](https://powerplatform.microsoft.com/)
 
+**Base URL:** https://api.powerplatform.com
 
 #### Tags:
 
- - power-platform, low-code, automation, business-intelligence
+ - Automation, Business-Intelligence, Low-Code, Power-Platform
 
 #### Properties
 
@@ -115,14 +121,15 @@ APIs for Power Apps, Power Automate, and Power BI
 - [Power BI REST API](https://docs.microsoft.com/en-us/rest/api/power-bi/)
 
 ### Dynamics 365 API
-APIs for Dynamics 365 business applications
+APIs for Dynamics 365 business applications.
 
 **Human URL:** [https://dynamics.microsoft.com/](https://dynamics.microsoft.com/)
 
+**Base URL:** https://api.businesscentral.dynamics.com
 
 #### Tags:
 
- - dynamics, crm, erp, business-applications
+ - Business-Applications, Crm, Dynamics, Erp
 
 #### Properties
 
@@ -131,14 +138,15 @@ APIs for Dynamics 365 business applications
 - [Developer Guide](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/)
 
 ### Xbox Live API
-APIs for Xbox Live gaming services
+APIs for Xbox Live gaming services.
 
 **Human URL:** [https://developer.microsoft.com/en-us/games/xbox](https://developer.microsoft.com/en-us/games/xbox)
 
+**Base URL:** https://xboxlive.com
 
 #### Tags:
 
- - gaming, xbox, multiplayer, achievements
+ - Achievements, Gaming, Multiplayer, Xbox
 
 #### Properties
 
@@ -157,6 +165,6 @@ APIs for Xbox Live gaming services
 
 ## Maintainers
 
-**FN:** Microsoft
+**FN:** Kin Lane
 
-**Email:** support@microsoft.com
+**Email:** kin@apievangelist.com
