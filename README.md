@@ -1,11 +1,15 @@
 # Microsoft Products (microsoft-products)
+
 A collection of APIs for various Microsoft products and services.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/microsoft-products/refs/heads/main/apis.yml)
 
-## Tags:
+## Tags
 
- - Cloud, Enterprise, Microsoft, Productivity
+- Cloud
+- Enterprise
+- Microsoft
+- Productivity
 
 ## Timestamps
 
@@ -15,144 +19,163 @@ A collection of APIs for various Microsoft products and services.
 ## APIs
 
 ### Microsoft Graph API
+
 Unified API endpoint for accessing Microsoft 365, Windows, and Enterprise Mobility + Security services.
 
-**Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
+#### Tags
 
-**Base URL:** https://graph.microsoft.com
-
-#### Tags:
-
- - Azure-Ad, Graph, Microsoft-365, Unified-Api
+- Azure-Ad
+- Graph
+- Microsoft-365
+- Unified-Api
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/graph/overview)
-- [OpenAPI](https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml)
+- [OpenAPI](https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [Authentication](https://docs.microsoft.com/en-us/graph/auth/)
-- [SDKs](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)
+- [S D Ks](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)
 - [Pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Azure REST API
+
 APIs for managing Azure resources and services.
 
-**Human URL:** [https://azure.microsoft.com/en-us/develop/](https://azure.microsoft.com/en-us/develop/)
+#### Tags
 
-**Base URL:** https://management.azure.com
-
-#### Tags:
-
- - Azure, Cloud, Iaas, Infrastructure, Paas
+- Azure
+- Cloud
+- Iaas
+- Infrastructure
+- Paas
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/rest/api/azure/)
-- [OpenAPI](https://github.com/Azure/azure-rest-api-specs)
+- [OpenAPI](https://github.com/Azure/azure-rest-api-specs) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [Authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
 - [Portal](https://portal.azure.com)
 - [Pricing](https://azure.microsoft.com/en-us/pricing/)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Microsoft 365 API
+
 APIs for Microsoft 365 services including Exchange, SharePoint, and Teams.
 
-**Human URL:** [https://developer.microsoft.com/en-us/microsoft-365](https://developer.microsoft.com/en-us/microsoft-365)
+#### Tags
 
-**Base URL:** https://api.office.com
-
-#### Tags:
-
- - Collaboration, Exchange, Office-365, Productivity, Sharepoint
+- Collaboration
+- Exchange
+- Office-365
+- Productivity
+- Sharepoint
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/office/)
-- [Developer Portal](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
-- [SDKs](https://docs.microsoft.com/en-us/office/dev/add-ins/)
+- [Developer  Portal](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
+- [S D Ks](https://docs.microsoft.com/en-us/office/dev/add-ins/)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Microsoft Teams API
+
 API for building apps and bots for Microsoft Teams.
 
-**Human URL:** [https://developer.microsoft.com/en-us/microsoft-teams](https://developer.microsoft.com/en-us/microsoft-teams)
+#### Tags
 
-**Base URL:** https://graph.microsoft.com/v1.0/teams
-
-#### Tags:
-
- - Chat, Collaboration, Meetings, Teams
+- Chat
+- Collaboration
+- Meetings
+- Teams
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/)
-- [Bot Framework](https://dev.botframework.com/)
-- [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview)
+- [Bot  Framework](https://dev.botframework.com/)
+- [App  Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Azure Cognitive Services API
+
 AI and machine learning APIs for vision, speech, language, and decision making.
 
-**Human URL:** [https://azure.microsoft.com/en-us/services/cognitive-services/](https://azure.microsoft.com/en-us/services/cognitive-services/)
+#### Tags
 
-**Base URL:** https://api.cognitive.microsoft.com
-
-#### Tags:
-
- - Ai, Cognitive-Services, Computer-Vision, Machine-Learning, Nlp
+- Ai
+- Cognitive-Services
+- Computer-Vision
+- Machine-Learning
+- Nlp
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/)
 - [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/)
-- [SDKs](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account)
+- [S D Ks](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Power Platform API
+
 APIs for Power Apps, Power Automate, and Power BI.
 
-**Human URL:** [https://powerplatform.microsoft.com/](https://powerplatform.microsoft.com/)
+#### Tags
 
-**Base URL:** https://api.powerplatform.com
-
-#### Tags:
-
- - Automation, Business-Intelligence, Low-Code, Power-Platform
+- Automation
+- Business-Intelligence
+- Low-Code
+- Power-Platform
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/power-platform/)
 - [Connectors](https://docs.microsoft.com/en-us/connectors/)
-- [Power BI REST API](https://docs.microsoft.com/en-us/rest/api/power-bi/)
+- [Power  B I  R E S T  A P I](https://docs.microsoft.com/en-us/rest/api/power-bi/)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Dynamics 365 API
+
 APIs for Dynamics 365 business applications.
 
-**Human URL:** [https://dynamics.microsoft.com/](https://dynamics.microsoft.com/)
+#### Tags
 
-**Base URL:** https://api.businesscentral.dynamics.com
-
-#### Tags:
-
- - Business-Applications, Crm, Dynamics, Erp
+- Business-Applications
+- Crm
+- Dynamics
+- Erp
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/dynamics365/)
-- [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/)
-- [Developer Guide](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/)
+- [Web  A P I](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/)
+- [Developer  Guide](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Xbox Live API
+
 APIs for Xbox Live gaming services.
 
-**Human URL:** [https://developer.microsoft.com/en-us/games/xbox](https://developer.microsoft.com/en-us/games/xbox)
+#### Tags
 
-**Base URL:** https://xboxlive.com
-
-#### Tags:
-
- - Achievements, Gaming, Multiplayer, Xbox
+- Achievements
+- Gaming
+- Multiplayer
+- Xbox
 
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/gaming/xbox-live/)
-- [Developer Portal](https://developer.microsoft.com/en-us/games/)
-- [Unity Plugin](https://github.com/microsoft/xbox-live-unity-plugin)
+- [Developer  Portal](https://developer.microsoft.com/en-us/games/)
+- [Unity  Plugin](https://github.com/microsoft/xbox-live-unity-plugin)
+- [Postman Collection](collections/microsoft-products.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/microsoft-products.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
@@ -161,10 +184,9 @@ APIs for Xbox Live gaming services.
 - [Terms of Service](https://www.microsoft.com/en-us/legal/terms-of-use)
 - [Privacy Policy](https://privacy.microsoft.com/)
 - [Support](https://support.microsoft.com/)
-- [Status](https://status.azure.com/)
+- [Status Page](https://status.azure.com/)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com
