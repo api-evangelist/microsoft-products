@@ -74,7 +74,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/office/
-      - type: Developer Portal
+      - type: DeveloperPortal
         url: https://developer.microsoft.com/en-us/microsoft-365/dev-program
       - type: SDKs
         url: https://docs.microsoft.com/en-us/office/dev/add-ins/
@@ -129,7 +129,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/power-platform/
-      - type: Connectors
+      - type: Integrations
         url: https://docs.microsoft.com/en-us/connectors/
       - type: Power BI REST API
         url: https://docs.microsoft.com/en-us/rest/api/power-bi/
@@ -165,7 +165,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/gaming/xbox-live/
-      - type: Developer Portal
+      - type: DeveloperPortal
         url: https://developer.microsoft.com/en-us/games/
       - type: Unity Plugin
         url: https://github.com/microsoft/xbox-live-unity-plugin
