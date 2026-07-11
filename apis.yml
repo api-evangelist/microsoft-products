@@ -173,6 +173,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: OAuthScopes
+    url: scopes/microsoft-products-scopes.yml
   - type: Portal
     url: https://developer.microsoft.com/
   - type: Authentication
