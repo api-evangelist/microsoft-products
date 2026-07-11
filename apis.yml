@@ -173,6 +173,12 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/microsoft-products-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/microsoft-products-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-products-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-products-scopes.yml
   - type: Portal
