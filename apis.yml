@@ -173,6 +173,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-products-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/microsoft-products-vulnerability-disclosure.yml
   - type: DomainSecurity
