@@ -1,0 +1,162 @@
+openapi: 3.1.0
+info:
+  title: Microsoft Graph API - Microsoft Products Drive API
+  description: A subset of Microsoft Graph v1.0 endpoints used to interact with Microsoft Office 365 services - Outlook mail, OneDrive files, and Microsoft Teams. Microsoft Graph is the unified REST API for Microsoft 365 services and uses OAuth 2.0 (Microsoft Entra ID) for authentication.
+  version: '1.0'
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0 production endpoint
+security:
+- oauth2: []
+tags:
+- name: Drive
+paths:
+  /me/drive:
+    get:
+      tags:
+      - Drive
+      summary: Get the signed-in user's OneDrive
+      operationId: getMyDrive
+      responses:
+        '200':
+          description: Drive
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Drive'
+  /me/drive/root/children:
+    get:
+      tags:
+      - Drive
+      summary: List items in the root of the user's drive
+      operationId: listMyDriveRootChildren
+      responses:
+        '200':
+          description: Collection of driveItems
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DriveItemCollection'
+  /me/drive/items/{item_id}:
+    get:
+      tags:
+      - Drive
+      summary: Get a driveItem by id
+      operationId: getMyDriveItem
+      parameters:
+      - name: item_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: DriveItem
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DriveItem'
+  /me/drive/items/{item_id}/content:
+    get:
+      tags:
+      - Drive
+      summary: Download a driveItem's content
+      operationId: downloadMyDriveItemContent
+      parameters:
+      - name: item_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '302':
+          description: Redirect to a pre-authenticated download URL
+        '200':
+          description: File content
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+    put:
+      tags:
+      - Drive
+      summary: Upload content to an existing driveItem
+      operationId: uploadMyDriveItemContent
+      parameters:
+      - name: item_id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: Updated driveItem
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DriveItem'
+components:
+  schemas:
+    DriveItemCollection:
+      type: object
+      properties:
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/DriveItem'
+    Drive:
+      type: object
+      properties:
+        id:
+          type: string
+        driveType:
+          type: string
+        owner:
+          type: object
+        quota:
+          type: object
+    DriveItem:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        size:
+          type: integer
+        file:
+          type: object
+        folder:
+          type: object
+        createdDateTime:
+          type: string
+          format: date-time
+        lastModifiedDateTime:
+          type: string
+          format: date-time
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID (Azure AD) OAuth 2.0. Use the authorization code, client credentials, or device code flow depending on the scenario.
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            Mail.Read: Read user mail
+            Mail.Send: Send mail as user
+            Files.Read: Read user files
+            Files.ReadWrite: Read and write user files
+            Team.ReadBasic.All: Read basic team info
+            ChannelMessage.Send: Send channel messages
+            User.Read: Sign in and read user profile
+x-generated-from: https://learn.microsoft.com/en-us/graph/overview
+x-generated-by: claude-genwave10-08-2026-05-23

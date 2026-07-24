@@ -1,0 +1,177 @@
+openapi: 3.1.0
+info:
+  title: Microsoft Graph API - Microsoft Products Drive Mail API
+  description: A subset of Microsoft Graph v1.0 endpoints used to interact with Microsoft Office 365 services - Outlook mail, OneDrive files, and Microsoft Teams. Microsoft Graph is the unified REST API for Microsoft 365 services and uses OAuth 2.0 (Microsoft Entra ID) for authentication.
+  version: '1.0'
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0 production endpoint
+security:
+- oauth2: []
+tags:
+- name: Mail
+paths:
+  /me/messages:
+    get:
+      tags:
+      - Mail
+      summary: List the signed-in user's messages
+      operationId: listMyMessages
+      parameters:
+      - name: $select
+        in: query
+        schema:
+          type: string
+      - name: $top
+        in: query
+        schema:
+          type: integer
+      - name: $filter
+        in: query
+        schema:
+          type: string
+      - name: $orderby
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A collection of messages
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageCollection'
+  /me/messages/{id}:
+    get:
+      tags:
+      - Mail
+      summary: Get a message by id
+      operationId: getMyMessage
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+  /me/sendMail:
+    post:
+      tags:
+      - Mail
+      summary: Send a mail message as the signed-in user
+      operationId: sendMyMail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendMailRequest'
+      responses:
+        '202':
+          description: Accepted
+  /me/mailFolders:
+    get:
+      tags:
+      - Mail
+      summary: List mail folders
+      operationId: listMyMailFolders
+      responses:
+        '200':
+          description: Collection of mail folders
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    SendMailRequest:
+      type: object
+      required:
+      - message
+      properties:
+        message:
+          type: object
+          properties:
+            subject:
+              type: string
+            body:
+              type: object
+              properties:
+                contentType:
+                  type: string
+                  enum:
+                  - Text
+                  - HTML
+                content:
+                  type: string
+            toRecipients:
+              type: array
+              items:
+                type: object
+                properties:
+                  emailAddress:
+                    type: object
+                    properties:
+                      address:
+                        type: string
+        saveToSentItems:
+          type: boolean
+    MessageCollection:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+    Message:
+      type: object
+      properties:
+        id:
+          type: string
+        subject:
+          type: string
+        bodyPreview:
+          type: string
+        from:
+          type: object
+          properties:
+            emailAddress:
+              type: object
+              properties:
+                name:
+                  type: string
+                address:
+                  type: string
+        toRecipients:
+          type: array
+          items:
+            type: object
+        receivedDateTime:
+          type: string
+          format: date-time
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID (Azure AD) OAuth 2.0. Use the authorization code, client credentials, or device code flow depending on the scenario.
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            Mail.Read: Read user mail
+            Mail.Send: Send mail as user
+            Files.Read: Read user files
+            Files.ReadWrite: Read and write user files
+            Team.ReadBasic.All: Read basic team info
+            ChannelMessage.Send: Send channel messages
+            User.Read: Sign in and read user profile
+x-generated-from: https://learn.microsoft.com/en-us/graph/overview
+x-generated-by: claude-genwave10-08-2026-05-23

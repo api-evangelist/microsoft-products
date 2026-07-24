@@ -1,0 +1,160 @@
+openapi: 3.1.0
+info:
+  title: Microsoft Graph API - Microsoft Products Drive Teams API
+  description: A subset of Microsoft Graph v1.0 endpoints used to interact with Microsoft Office 365 services - Outlook mail, OneDrive files, and Microsoft Teams. Microsoft Graph is the unified REST API for Microsoft 365 services and uses OAuth 2.0 (Microsoft Entra ID) for authentication.
+  version: '1.0'
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0 production endpoint
+security:
+- oauth2: []
+tags:
+- name: Teams
+paths:
+  /me/joinedTeams:
+    get:
+      tags:
+      - Teams
+      summary: List teams the signed-in user is a member of
+      operationId: listMyJoinedTeams
+      responses:
+        '200':
+          description: Collection of teams
+          content:
+            application/json:
+              schema:
+                type: object
+  /teams/{team_id}:
+    get:
+      tags:
+      - Teams
+      summary: Get a team by id
+      operationId: getTeam
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Team
+          content:
+            application/json:
+              schema:
+                type: object
+  /teams/{team_id}/channels:
+    get:
+      tags:
+      - Teams
+      summary: List channels in a team
+      operationId: listTeamChannels
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Collection of channels
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      tags:
+      - Teams
+      summary: Create a channel in a team
+      operationId: createTeamChannel
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Created channel
+          content:
+            application/json:
+              schema:
+                type: object
+  /teams/{team_id}/channels/{channel_id}/messages:
+    get:
+      tags:
+      - Teams
+      summary: List chat messages in a channel
+      operationId: listChannelMessages
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: channel_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Collection of chatMessages
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      tags:
+      - Teams
+      summary: Send a chat message to a channel
+      operationId: sendChannelMessage
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: channel_id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Created chatMessage
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID (Azure AD) OAuth 2.0. Use the authorization code, client credentials, or device code flow depending on the scenario.
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            Mail.Read: Read user mail
+            Mail.Send: Send mail as user
+            Files.Read: Read user files
+            Files.ReadWrite: Read and write user files
+            Team.ReadBasic.All: Read basic team info
+            ChannelMessage.Send: Send channel messages
+            User.Read: Sign in and read user profile
+x-generated-from: https://learn.microsoft.com/en-us/graph/overview
+x-generated-by: claude-genwave10-08-2026-05-23
