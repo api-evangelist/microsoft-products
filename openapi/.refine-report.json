@@ -1,0 +1,18 @@
+{
+  "provider": "microsoft-products",
+  "sources": [
+    "microsoft-products-drive-api-openapi.yml",
+    "microsoft-products-mail-api-openapi.yml",
+    "microsoft-products-teams-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-products-drive-api-openapi.yml",
+    "microsoft-products-mail-api-openapi.yml",
+    "microsoft-products-teams-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
