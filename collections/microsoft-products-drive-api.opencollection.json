@@ -1,0 +1,106 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Microsoft Graph API - Microsoft Products Drive API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "accessTokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Drive",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the signed-in user's OneDrive",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/me/drive"
+          },
+          "docs": "Get the signed-in user's OneDrive"
+        },
+        {
+          "info": {
+            "name": "List items in the root of the user's drive",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/me/drive/root/children"
+          },
+          "docs": "List items in the root of the user's drive"
+        },
+        {
+          "info": {
+            "name": "Get a driveItem by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/me/drive/items/:item_id",
+            "params": [
+              {
+                "name": "item_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a driveItem by id"
+        },
+        {
+          "info": {
+            "name": "Download a driveItem's content",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/me/drive/items/:item_id/content",
+            "params": [
+              {
+                "name": "item_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Download a driveItem's content"
+        },
+        {
+          "info": {
+            "name": "Upload content to an existing driveItem",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://graph.microsoft.com/v1.0/me/drive/items/:item_id/content",
+            "params": [
+              {
+                "name": "item_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Upload content to an existing driveItem"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
