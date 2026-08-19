@@ -18,7 +18,7 @@ accessModel:
 image: https://www.microsoft.com/favicon.ico
 created: '2024-01-01'
 modified: '2026-04-28'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 tags:
   - Cloud
   - Enterprise
