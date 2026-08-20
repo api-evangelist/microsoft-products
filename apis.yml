@@ -34,6 +34,12 @@ apis:
   tags:
   - Collaboration
   - Exchange
+  - Office 365
+  - Productivity
+  - SharePoint
+  tags_raw:
+  - Collaboration
+  - Exchange
   - Office-365
   - Productivity
   - Sharepoint
@@ -53,6 +59,11 @@ apis:
   - Chat
   - Collaboration
   - Meetings
+  - Team
+  tags_raw:
+  - Chat
+  - Collaboration
+  - Meetings
   - Teams
   properties:
   - type: Documentation
@@ -68,6 +79,12 @@ apis:
   humanUrl: https://azure.microsoft.com/en-us/services/cognitive-services/
   baseUrl: https://api.cognitive.microsoft.com
   tags:
+  - Artificial Intelligence
+  - Cognitive-Services
+  - Computer-Vision
+  - Machine-Learning
+  - NLP
+  tags_raw:
   - Ai
   - Cognitive-Services
   - Computer-Vision
@@ -88,6 +105,11 @@ apis:
   baseUrl: https://api.powerplatform.com
   tags:
   - Automation
+  - Business Intelligence
+  - Low-Code
+  - Power Platform
+  tags_raw:
+  - Automation
   - Business-Intelligence
   - Low-Code
   - Power-Platform
@@ -104,6 +126,11 @@ apis:
   humanUrl: https://dynamics.microsoft.com/
   baseUrl: https://api.businesscentral.dynamics.com
   tags:
+  - Business Applications
+  - CRM
+  - Dynamics
+  - ERP
+  tags_raw:
   - Business-Applications
   - Crm
   - Dynamics
@@ -136,6 +163,8 @@ apis:
   name: Microsoft Products Drive API
   description: The Drive API from Microsoft Products — 4 operation(s) for drive.
   tags:
+  - Drives
+  tags_raw:
   - Drive
   properties:
   - type: OpenAPI
@@ -184,6 +213,8 @@ apis:
   name: Microsoft Products Teams API
   description: The Teams API from Microsoft Products — 4 operation(s) for teams.
   tags:
+  - Team
+  tags_raw:
   - Teams
   properties:
   - type: OpenAPI
