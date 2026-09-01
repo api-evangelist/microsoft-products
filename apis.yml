@@ -46,9 +46,9 @@ apis:
   tags:
   - Collaboration
   - Exchange
-  - Office-365
+  - Office 365
   - Productivity
-  - Sharepoint
+  - SharePoint
   tags_raw:
   - Collaboration
   - Exchange
@@ -95,7 +95,7 @@ apis:
   - Cognitive-Services
   - Computer-Vision
   - Machine-Learning
-  - Nlp
+  - NLP
   tags_raw:
   - Ai
   - Cognitive-Services
@@ -117,9 +117,9 @@ apis:
   baseUrl: https://api.powerplatform.com
   tags:
   - Automation
-  - Business-Intelligence
+  - Business Intelligence
   - Low-Code
-  - Power-Platform
+  - Power Platform
   tags_raw:
   - Automation
   - Business-Intelligence
@@ -138,10 +138,10 @@ apis:
   humanUrl: https://dynamics.microsoft.com/
   baseUrl: https://api.businesscentral.dynamics.com
   tags:
-  - Business-Applications
+  - Business Applications
   - CRM
   - Dynamics
-  - Erp
+  - ERP
   tags_raw:
   - Business-Applications
   - Crm
@@ -175,7 +175,7 @@ apis:
   name: Microsoft Products Drive API
   description: The Drive API from Microsoft Products — 4 operation(s) for drive.
   tags:
-  - Drive
+  - Drives
   tags_raw:
   - Drive
   properties:
