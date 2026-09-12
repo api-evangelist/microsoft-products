@@ -251,6 +251,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-products-agentic-access.yml
   - type: VulnerabilityDisclosure
@@ -273,3 +275,5 @@ common:
     url: https://support.microsoft.com/
   - type: StatusPage
     url: https://status.azure.com/
+x-parent: microsoft
+x-relationship: product
